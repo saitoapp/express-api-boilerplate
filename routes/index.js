@@ -1,9 +1,9 @@
 import express from 'express';
-import todoController from '../controllers/todos';
+import webhookController from '../controllers/webhookController';
 
 const router = express.Router();
 
-// get all todos
-router.get('/api/v1/todos', todoController.getAllTodos);
+// webhook
+router.get('/webhook/', webhookController.tokenVerification);
 
 export default router;

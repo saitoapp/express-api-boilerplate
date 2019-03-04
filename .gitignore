@@ -82,3 +82,6 @@ typings/
 # Webstorm
 .DS_Store
 .idea
+
+# Ssl
+*.pem
